@@ -73,7 +73,6 @@ class Calculator{
             default: 
                 return
         }
-        console.log(computation);
 
         let quoteOne = "It is during our darkest moments that we must focus to see the light - Aristotle";
         let quoteTwo = "A tragedy of mathematics is a beautiful conjecture ruined by an ugly fact - Plato";
@@ -118,7 +117,7 @@ class Calculator{
         let quoteFourtyOne = "It is possible for ordinary people to choose to be extraordinary - Elon Musk";
         let quoteFourtyTwo = "Innovation distinguishes between a leader and a follower - Steve Jobs";
         let quoteFourtyThree = "Don’t let the noise of others’ opinions drown out your own inner voice - Steve Jobs";
-        let quoteFourtyFour = "You only fail when you stop trying";
+        let quoteFourtyFour = "You only fail when you stop trying - Unknown";
         let quoteFourtyFive = "A question that sometimes drives me hazy: am I or are the others crazy? - Albert Einstein"; 
         let quoteFourtySix = "Have no fear of perfection - you'll never reach it - Salvador Dali";
         let quoteFourtySeven = "Success is not final, failure is not fatal: it is the courage to continue that counts - Winston Churchhill";
@@ -136,127 +135,130 @@ class Calculator{
         let two = "There are no accidents - Master Oogway";
         let one = "There is always something more to learn. Even for a master - Master Oogway";
 
-
+        var min = Math.ceil(-10);
+        var max = Math.floor(50);
+        var quoteNum = Math.floor(Math.random() * (max - min + 1) + min);
+        console.log(quoteNum);
         
-         if (computation % 50 === 0){
+         if (quoteNum == 50){
             this.currentOperand = quoteFifty; 
-        } else if (computation % 49 === 0){
+        } else if (quoteNum == 49){
             this.currentOperand = quoteFourtyNine; 
-        } else if (computation % 48 === 0){
+        } else if (quoteNum == 48){
             this.currentOperand = quoteFourtyEight; 
-        } else if (computation % 47 === 0){
+        } else if (quoteNum == 47){
             this.currentOperand = quoteFourtySeven; 
-        } else if (computation % 46 === 0){
+        } else if (quoteNum == 46){
             this.currentOperand = quoteFourtySix; 
-        } else if (computation % 45 === 0){
+        } else if (quoteNum == 45){
             this.currentOperand = quoteFourtyFive;
-        } else if (computation % 44 === 0){
+        } else if (quoteNum == 44){
             this.currentOperand = quoteFourtyFour; 
-        } else if (computation % 43 === 0){
+        } else if (quoteNum == 43){
             this.currentOperand = quoteFourtyThree; 
-        } else if (computation % 42 === 0){
+        } else if (quoteNum == 42){
             this.currentOperand = quoteFourtyTwo; 
-        } else if (computation % 41 === 0){
+        } else if (quoteNum == 41){
             this.currentOperand = quoteFourtyOne; 
-        } else if (computation % 40 === 0){
+        } else if (quoteNum == 40){
             this.currentOperand = quoteFourty; 
-        } else if (computation % 39 === 0){
+        } else if (quoteNum == 39){
             this.currentOperand = quoteThirtyNine; 
-        } else if (computation % 38 === 0){
+        } else if (quoteNum == 38){
             this.currentOperand = quoteThirtyEight; 
-        } else if (computation % 37 === 0){
+        } else if (quoteNum == 37){
             this.currentOperand = quoteThirtySeven; 
-        } else if (computation % 36 === 0){
+        } else if (quoteNum == 36){
             this.currentOperand = quoteThirtySix; 
-        } else if (computation % 35 === 0){
+        } else if (quoteNum == 35){
             this.currentOperand = quoteThirtyFive; 
-        } else if (computation % 34 === 0){
+        } else if (quoteNum == 34){
             this.currentOperand = quoteThirtyFour; 
-        } else if (computation % 33 === 0){
+        } else if (quoteNum == 33){
             this.currentOperand = quoteThirtyThree; 
-        } else if (computation % 32 === 0){
+        } else if (quoteNum == 32){
             this.currentOperand = quoteThirtyTwo; 
-        } else if (computation % 31 === 0){
+        } else if (quoteNum == 31){
             this.currentOperand = quoteThirtyOne; 
-        } else if (computation % 30 === 0){
+        } else if (quoteNum == 30){
             this.currentOperand = quoteThirty; 
-        } else if (computation % 29 === 0){
+        } else if (quoteNum == 29){
             this.currentOperand = quoteTwentyNine; 
-        } else if (computation % 28 === 0){
+        } else if (quoteNum == 28){
             this.currentOperand = quoteTwentyEight; 
-        } else if (computation % 27 === 0){
+        } else if (quoteNum == 27){
             this.currentOperand = quoteTwentySeven; 
-        } else if (computation % 26 === 0){
+        } else if (quoteNum == 26){
             this.currentOperand = quoteTwentySix; 
-        } else if (computation % 25 === 0) {
+        } else if (quoteNum == 25) {
             this.currentOperand = quoteTwentyFive; 
-        } else if (computation % 24 === 0){
+        } else if (quoteNum == 24){
             this.currentOperand = quoteTwentyFour; 
-        } else if (computation % 23 === 0){
+        } else if (quoteNum == 23){
             this.currentOperand = quoteTwentyThree; 
-        } else if (computation % 22 === 0){
+        } else if (quoteNum == 22){
             this.currentOperand = quoteTwentyTwo; 
-        } else if (computation % 21 === 0){
+        } else if (quoteNum == 21){
             this.currentOperand = quoteTwentyOne; 
-        } else if (computation % 20 === 0){
+        } else if (quoteNum == 20){
             this.currentOperand = quoteTwenty; 
-        } else if (computation % 19 === 0){
+        } else if (quoteNum == 19){
             this.currentOperand = quoteNineteen; 
-        } else if (computation % 18 === 0){
+        } else if (quoteNum == 18){
             this.currentOperand = quoteEighteen; 
-        } else if (computation % 17 === 0){
+        } else if (quoteNum == 17){
             this.currentOperand = quoteSeventeen; 
-        } else if (computation % 16 === 0){
+        } else if (quoteNum == 16){
             this.currentOperand = quoteSixteen; 
-        } else if (computation % 15 === 0){
+        } else if (quoteNum == 15){
             this.currentOperand = quoteFiveteen; 
-        } else if (computation % 14 === 0){
+        } else if (quoteNum == 14){
             this.currentOperand = quoteFourteen; 
-        } else if (computation % 13 === 0){
+        } else if (quoteNum == 13){
             this.currentOperand = quoteThirteen; 
-        } else if (computation % 12 === 0){
+        } else if (quoteNum == 12){
             this.currentOperand = quoteTwelve; 
-        } else if (computation % 11 === 0){
+        } else if (quoteNum == 11){
             this.currentOperand = quoteEleven; 
-        } else if (computation % 10 === 0){
+        } else if (quoteNum == 10){
             this.currentOperand = quoteTen; 
-        } else if (computation % 9 === 0){
+        } else if (quoteNum == 9){
             this.currentOperand = quoteNine; 
-        } else if (computation % 8 === 0){
+        } else if (quoteNum == 8){
             this.currentOperand = quoteEight; 
-        } else if (computation % 7 === 0){
+        } else if (quoteNum == 7){
             this.currentOperand = quoteSeven; 
-        } else if (computation % 6 === 0){
+        } else if (quoteNum == 6){
             this.currentOperand = quoteSix; 
-        } else if (computation % 5 === 0){
+        } else if (quoteNum == 5){
             this.currentOperand = quoteFive; 
-        } else if (computation % 4 === 0){
+        } else if (quoteNum == 4){
             this.currentOperand = quoteFour; 
-        } else if (computation % 3 === 0){
+        } else if (quoteNum == 3){
             this.currentOperand = quoteThree; 
-        } else if (computation % 2 === 0){
+        } else if (quoteNum == 2){
             this.currentOperand = quoteTwo; 
-        } else if (computation % 1 === 0){
+        } else if (quoteNum == 1){
             this.currentOperand = quoteOne; 
-        } else if (computation % .5 === 0) {
+        } else if (quoteNum == 0) {
             this.currentOperand = quoteTwentyFive;
-        } else if (computation % .1 === 0){
+        } else if (quoteNum == -1){
             this.currentOperand = ten; 
-        } else if (computation % .01 === 0){
+        } else if (quoteNum == -2){
             this.currentOperand = nine; 
-        } else if (computation % .001 === 0){
+        } else if (quoteNum == -3){
             this.currentOperand = eight; 
-        } else if (computation % .0001 === 0){
+        } else if (quoteNum == -4){
             this.currentOperand = seven; 
-        } else if (computation % .00001 === 0){
+        } else if (quoteNum == -5){
             this.currentOperand = six; 
-        } else if (computation % .000001 === 0){
+        } else if (quoteNum == -6){
             this.currentOperand = five; 
-        } else if (computation % .0000001 === 0){
+        } else if (quoteNum == -7){
             this.currentOperand = four; 
-        } else if (computation % .00000001 === 0){
+        } else if (quoteNum == -8){
             this.currentOperand = three; 
-        } else if (computation % .000000001 === 0){
+        } else if (quoteNum == -9){
             this.currentOperand = two; 
         } else{
             this.currentOperand = one; 
